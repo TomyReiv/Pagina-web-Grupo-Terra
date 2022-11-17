@@ -1,0 +1,930 @@
+/* colores */
+/* fuente */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+p {
+  color: #000;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/** Media Queries **/
+.contenido-redes {
+  background-color: #53919e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .contenido-redes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.contenido-redes a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: #fff;
+}
+.contenido-redes .contenedor-red {
+  margin-right: 0;
+  margin-top: 1rem;
+}
+@media (min-width: 800px) {
+  .contenido-redes .contenedor-red {
+    margin-top: 10px;
+    margin-right: 1rem;
+  }
+}
+.contenido-redes .contenedor-red img {
+  filter: invert(100%);
+}
+
+.header {
+  background-image: url(../img/portada2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  .header {
+    height: 60rem;
+  }
+}
+.header h1 {
+  font-size: 6rem;
+  background: -webkit-linear-gradient(#005365, #85ffff, #fff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Cinzel Decorative", cursive;
+}
+@media (min-width: 800px) {
+  .header h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+}
+.header .cont-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .cont-logo img {
+  width: 10rem;
+  height: 10rem;
+}
+@media (min-width: 800px) {
+  .header .cont-logo img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 7rem;
+  }
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .derecha.fijo {
+    position: fixed;
+    width: 100%;
+    background-color: #005365;
+    align-items: center;
+  }
+  .derecha.fijo a {
+    color: #fff;
+    padding: 1.5rem;
+  }
+  .derecha.fijo .productos {
+    background-color: #005365;
+  }
+}
+@media (min-width: 800px) {
+  .derecha {
+    align-items: flex-end;
+  }
+}
+.derecha:hover {
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  .derecha {
+    margin-top: 0rem;
+  }
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+@media (min-width: 800px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.navegacion {
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in 0.7s;
+}
+@media (min-width: 800px) {
+  .navegacion {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+.navegacion a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+}
+@media (min-width: 800px) {
+  .navegacion a {
+    margin-right: 2rem;
+  }
+  .navegacion a:hover {
+    opacity: 0.7;
+    border-bottom: 4px solid #53919e;
+  }
+  .navegacion a:last-child {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .navegacion .cont-producto .productos {
+    position: absolute;
+  }
+}
+.navegacion .cont-producto .productos a {
+  font-size: 1.5rem;
+}
+@media (min-width: 800px) {
+  .navegacion .cont-producto .productos a {
+    margin-left: 4rem;
+  }
+}
+
+/*  menu de burger */
+@media (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu img {
+  width: 2rem;
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+  background-color: #d4e5e9;
+}
+.footer .copyrigth {
+  font-size: 1.3rem;
+  color: #7a7a7a;
+  text-align: center;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.contenedor-footer .titulo {
+  font-weight: 700;
+}
+.contenedor-footer li {
+  font-size: 1.3rem;
+  color: #7a7a7a;
+  list-style: none;
+}
+@media (min-width: 800px) {
+  .contenedor-footer li {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .contenedor-footer {
+    display: grid;
+    gap: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sociales h4 {
+  display: inline;
+  margin: 0;
+  color: #53919e;
+  font-weight: "Cinzel Decorative", cursive;
+  border-bottom: 2px solid #005365;
+}
+.sociales p {
+  margin: 0;
+  font-style: italic;
+  color: #7a7a7a;
+}
+.sociales a {
+  margin-left: 6rem;
+}
+
+.formulario {
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+  .formulario {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    gap: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.formulario .contacto {
+  margin-bottom: 1rem;
+}
+.formulario .contacto h3 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #005365;
+}
+@media (min-width: 800px) {
+  .formulario .contacto h3 {
+    font-size: 4rem;
+  }
+}
+.formulario .contacto p {
+  width: 80%;
+  margin: auto;
+  color: #005365;
+}
+.formulario .contacto li {
+  list-style: none;
+  color: #53919e;
+  font-size: 1.7rem;
+}
+@media (min-width: 800px) {
+  .formulario .contacto li {
+    margin-left: 2rem;
+  }
+}
+.formulario .contacto .titulo {
+  font-weight: 700;
+}
+.formulario legend {
+  font-family: "Cinzel Decorative", cursive;
+  color: #005365;
+}
+.formulario label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  color: #005365;
+}
+.formulario input:not([type=submit]),
+.formulario textarea,
+.formulario select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #7a7a7a;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  color: #005365;
+}
+.formulario .btn-form {
+  width: 100%;
+  background-color: #005365;
+  border-radius: 1rem;
+  color: #fff;
+  border: none;
+  padding: 7px;
+}
+@media (min-width: 800px) {
+  .formulario .btn-form {
+    width: auto;
+  }
+}
+
+.terapia {
+  margin: 2rem 0 2rem 0;
+}
+@media (min-width: 800px) {
+  .terapia {
+    margin: 5rem;
+  }
+}
+
+.seccion {
+  margin: 2rem 0 2rem 0;
+}
+.seccion h2 {
+  text-transform: uppercase;
+  font-family: "Cinzel Decorative", cursive;
+  color: #005365;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.seccion p {
+  text-indent: 1.5rem;
+  color: #005365;
+  margin-bottom: 0;
+  text-align: justify;
+  font-size: 1.7rem;
+  padding: 8px;
+}
+@media (min-width: 800px) {
+  .seccion p {
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+.seccion .parrafo-2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.seccion .texto {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .seccion .texto {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 800px) {
+  .cromoterapia {
+    align-items: center;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cromoterapia img {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 800px) {
+  .cromoterapia img {
+    width: 60%;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .ozonoterapia {
+    align-items: center;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.ozonoterapia img {
+  height: 20rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+@media (min-width: 800px) {
+  .ozonoterapia img {
+    margin: auto;
+    margin-top: 8rem;
+    width: 20rem;
+    height: 20rem;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    grid-row-start: 0;
+    grid-row-end: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  .neumoterapia {
+    align-items: center;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.neumoterapia img {
+  height: 20rem;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .neumoterapia img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .hidroterapia {
+    align-items: center;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.hidroterapia img {
+  height: 20rem;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .hidroterapia img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 7rem;
+    grid-row-start: 0;
+    grid-row-end: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  .contenedor-titulo {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contenedor-titulo h1 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #005365;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+@media (min-width: 800px) {
+  .contenedor-titulo h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .contenedor-titulo .linea {
+    justify-content: center;
+    border-bottom: 1px solid #53919e;
+    margin-bottom: 5rem;
+  }
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+@media (min-width: 800px) {
+  .contenedor-productos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contenedor-productos .producto {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #feffff;
+}
+@media (min-width: 800px) {
+  .contenedor-productos .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contenedor-productos .producto .hidro h4 {
+  font-size: 2rem;
+  font-family: "Cinzel Decorative", cursive;
+  color: #005365;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #53919e;
+  transition: ease-in 0.3s;
+}
+@media (min-width: 800px) {
+  .contenedor-productos .producto .hidro h4:hover {
+    color: #00a7cb;
+  }
+}
+.contenedor-productos .producto img {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0;
+  transition: ease-in 0.7s;
+}
+@media (min-width: 800px) {
+  .contenedor-productos .producto img {
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1204px) {
+  .contenedor-productos .producto img {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+.contenedor-productos .producto .articulo h4 {
+  color: #005365;
+  font-family: "Cinzel Decorative", cursive;
+  border-bottom: 1px solid #53919e;
+}
+.contenedor-productos .producto li {
+  list-style: none;
+  color: #005365;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.7rem;
+}
+.contenedor-productos .producto p {
+  color: #005365;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.7rem;
+}
+
+.seccion {
+  background-color: #f6f9fa;
+}
+.seccion .contenido-parrafo {
+  padding: 2rem;
+}
+@media (min-width: 800px) {
+  .seccion .contenido-parrafo {
+    width: 70%;
+    margin: auto;
+  }
+}
+.seccion p {
+  text-align: justify;
+  font-family: "DM Sans", sans-serif;
+}

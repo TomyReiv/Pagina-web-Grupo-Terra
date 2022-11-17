@@ -1,0 +1,15 @@
+.seccion{
+    background-color: lighten($azulClaro, 50);
+
+    .contenido-parrafo{
+        padding: 2rem;
+        @include tablet{
+            width: 70%;
+            margin: auto
+        }
+    }
+    p{
+        text-align: justify;
+        font-family: $letra;
+    }
+}

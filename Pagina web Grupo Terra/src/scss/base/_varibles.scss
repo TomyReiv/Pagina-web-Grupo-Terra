@@ -1,0 +1,28 @@
+/* colores */
+
+$gris: #7a7a7a;
+$azulOscuro: #005365;
+$azulClaro: #53919e;
+$celeste: #85ffff;
+$blanco: #fff;
+$negro: #000;
+$alerta: rgb(255, 0, 0);
+$correcto: rgb(4, 209, 4);
+
+/* fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+$letra: 'DM Sans', sans-serif;
+$titulo: 'Cinzel Decorative', cursive;
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 800px;
+$desktop: 1204px;
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900
