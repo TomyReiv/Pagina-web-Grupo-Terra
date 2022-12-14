@@ -1,0 +1,147 @@
+.terapia {
+    margin: 2rem 0 2rem 0;
+
+    @include tablet {
+        margin: 5rem;
+    }
+}
+
+.seccion {
+    margin: 2rem 0 2rem 0;
+
+    h2 {
+        text-transform: uppercase;
+        font-family: $titulo;
+        color: $azulOscuro;
+        font-weight: 700;
+        font-size: 2.5rem;
+
+    }
+
+    p {
+        text-indent: 1.5rem;
+        color: $azulOscuro;
+        margin-bottom: 0;
+        text-align: justify;
+        font-size: 1.7rem;
+        padding: 8px;
+
+        @include tablet {
+            font-size: 2rem;
+            padding: 0;
+        }
+    }
+
+    .parrafo-2 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+
+    .texto {
+        width: 100%;
+
+        @include tablet {
+            width: 80%;
+            margin: auto;
+
+        }
+    }
+
+}
+
+.cromoterapia {
+    @include tablet {
+        align-items: center;
+
+
+        @include grid(2, 0)
+    }
+
+    img {
+        width: 100%;
+        margin: auto;
+
+        @include tablet {
+            width: 60%;
+            border-radius: 2rem;
+        }
+    }
+
+}
+
+
+.ozonoterapia {
+    @include tablet {
+        align-items: center;
+
+
+        @include grid(2, 0)
+    }
+
+    img {
+        height: 20rem;
+        width: 100%;
+        padding-top: 1rem;
+
+        @include tablet {
+            margin: auto;
+            margin-top: 8rem;
+            width: 20rem;
+            height: 20rem;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            grid-row-start: 0;
+            grid-row-end: 1;
+        }
+    }
+}
+
+.neumoterapia {
+
+    @include tablet {
+        align-items: center;
+
+
+        @include grid(2, 0)
+    }
+
+    img {
+        height: 20rem;
+        width: 100%;
+
+        @include tablet {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 7rem;
+        }
+    }
+}
+
+.hidroterapia {
+    @include tablet {
+        align-items: center;
+
+
+        @include grid(2, 0)
+    }
+
+    img {
+        height: 20rem;
+        width: 100%;
+
+        @include tablet {
+            width: 70%;
+            height: auto;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 7rem;
+            grid-row-start: 0;
+            grid-row-end: 1;
+        }
+    }
+}
