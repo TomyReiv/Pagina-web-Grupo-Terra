@@ -138,21 +138,12 @@
 
     </footer> <!-- cierre footer -->
 
-    <?php
-    if (isset($_GET['DATO'])) {
-        $dato = $_GET['DATO'];
-        if ($dato = "CORRECTO") {
-            echo "<script>alert('Mensaje enviado correctamente')</script>";
-        } else {
-            echo "<script>alert('Error en envio del mensaje')</script>";
-        }
-    }
-    ?>
+
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="build/js/app.js"></script>
-    <!--     <script src="build/js/correo.js"></script> -->
+    <script src="build/js/correo.js"></script>
 </body>
 
 </html>
