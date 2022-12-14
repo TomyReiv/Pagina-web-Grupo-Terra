@@ -8,9 +8,9 @@
         $correo = mail($destino, "Consulta hidromasajes", $contenido);
 
         if($correo){
-            echo "Correcto";
+            header("location:index.php?DATO=CORRECTO");
         }else{
-            echo "Incorrecto";
+            header("location:index.php?DATO=INCORRECTO");
         }
         
     }
